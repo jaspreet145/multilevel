@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<unistd.h>
 #include<stdlib.h>
+#include<conio.h>
 #include<limits.h>
 int n;
 //ta and wt are turnaround and waiting time 
@@ -259,6 +260,7 @@ int main()
       i++; 
 	}
 	display();
+	getch();
 }
 
 
