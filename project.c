@@ -35,7 +35,7 @@ int idel(int checker[],int i)
 	}
 	return j;
 }
-void prisort()		//this function is correct
+void prisort()		
 {
 	int i=0,j=0,k=n-1,max;
 	while(j<n)
@@ -60,7 +60,7 @@ void prisort()		//this function is correct
 		k--;
 	}
 }
-int isin(int c,int b)			//this is correct
+int isin(int c,int b)			
 {
 	int  i;
 	i=-1;
@@ -96,7 +96,7 @@ int isin(int c,int b)			//this is correct
 	}
 	return i;
 }
-int min(int time)    //this function is correct
+int min(int time)    
 {
 	int i,j=-1;
 	for(i=0;i<n;i++)
@@ -160,7 +160,7 @@ int main()
 		}
 
 		int index= INT_MAX;
-	for(j=0;j<i;j++)			//this is correct
+	for(j=0;j<i;j++)			
 		{
 			if(exec[checker[j]]!=1)
 				{
@@ -172,7 +172,7 @@ int main()
 					
 						if(k<index)			
 						{
-							index=k;		//change her3e
+							index=k;		
 							break;
 						}
 					}
@@ -188,7 +188,7 @@ int main()
 		temp=rt[index];
 		}
 	
-		for(j=0;j<=temp&&(isin(timeline,index))==-1&& rt[index]>0;j++)   //j replaced with timeline //check this
+		for(j=0;j<=temp&&(isin(timeline,index))==-1&& rt[index]>0;j++)   
 		{
 			rt[index]--;
 			timeline++;
@@ -208,7 +208,7 @@ int main()
 				}
 			
 				
-			if(pri[isin(timeline,-1)]<pri[index]&&isin(timeline,-1)!=-1)		//this is correct
+			if(pri[isin(timeline,-1)]<pri[index]&&isin(timeline,-1)!=-1)	
 			{
 
 				queue2[q2size]=index;
@@ -217,7 +217,7 @@ int main()
 				exec[index]=1;
 			}
 		}
-		if(rt[index]==0)	//this is correct
+		if(rt[index]==0)
 		{
 			wt[index]=timeline-at[index]-bt[index];   
 			wait=wait+wt[index];
@@ -228,7 +228,6 @@ int main()
 		}	
 		
 	}
-	//after this it might be wrong
 	int timeq=2;
 	remaining = q2size;
 	i=0;
