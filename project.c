@@ -10,7 +10,7 @@ int n;
 int bt[10],at[10],pri[10];
 int processno[10];
 int ta[10],wt[10],flag[10]={0},exec[10];
-int avgta,avgw,wait,turn;
+int wait,turn;
 int a[10];
 int display()
 {
@@ -20,6 +20,7 @@ int display()
 	{
 		printf("P[%d]\t|\t%d\t|\t%d\n",processno[i],ta[i],wt[i]); 
 	}
+	
 	printf("\nAverage Waiting Time= %f\n",wait*1.0/n); 
   printf("Avg Turnaround Time = %f",turn*1.0/n); 
 }
