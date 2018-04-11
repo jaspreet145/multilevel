@@ -37,7 +37,7 @@ int idel(int checker[],int i)
 }
 void prisort()		
 {
-	int i=0,j=0,k=n-1,max;
+	int i=0,j=0,k=n-1,max,temp=-1;
 	while(j<n)
 	{
 		max=-1;
@@ -47,15 +47,10 @@ void prisort()
 			{
 				max=pri[i];
 				a[k]=i;
+				temp=i;
 			}
 		}
-		for(i=0;i<n;i++)
-		{
-			if(max==pri[i])
-			{
-				flag[i]=1;
-			}
-		}
+		flag[temp]=1;
 		j++;
 		k--;
 	}
@@ -148,6 +143,7 @@ int main()
 	i=0;
 	while(remaining!=0)
 	{
+		printf("%d",remaining);
 		while((k = min(timeline))!=-1)
 		{
 			checker[i]=k;
