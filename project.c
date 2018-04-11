@@ -143,7 +143,6 @@ int main()
 	i=0;
 	while(remaining!=0)
 	{
-		printf("%d",remaining);
 		while((k = min(timeline))!=-1)
 		{
 			checker[i]=k;
