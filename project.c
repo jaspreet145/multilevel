@@ -43,7 +43,7 @@ void prisort()
 		max=-1;
 		for(i=0;i<n;i++)
 		{
-			if(max<pri[i] && flag[i]==0)
+			if(max<=pri[i] && flag[i]==0)
 			{
 				max=pri[i];
 				a[k]=i;
